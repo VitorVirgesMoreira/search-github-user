@@ -15,14 +15,32 @@
 }
 
 .App-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 2.5rem;
 
-  text-align: left;
   font-size: 34px;
   font-weight: 700;
+}
 
-  background-color: var(--background-color-dark);
-  color: white;
+.App-header .changeTheme {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  border: none;
+  background-color: transparent;
+
+  margin-right: 0;
+  margin-left: auto;
+  font-size: 16px;
+}
+
+.App-header svg {
+  width: 2rem;
+  height: 20px;
 }
 
 /* Pesquisa */
@@ -36,13 +54,10 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-
-  background-color: var(--primary-color-dark);
 }
 
 .Search .search-icon {
   margin-right: 1.25rem;
-  color: #8b98a5;
 }
 
 .Search .input-search-text {
@@ -60,7 +75,6 @@
 .Search input[type="text"],
 .Search .input-search-text::-webkit-input-placeholder {
   font-size: 16px;
-  color: #8b98a5;
 }
 
 .Search .search-button {
@@ -95,9 +109,6 @@
   height: 80%;
   border-radius: 12px;
   padding: 3.75rem 2.5rem;
-
-  background-color: var(--primary-color-dark);
-  color: #ffff;
 }
 
 .form-group {
@@ -163,7 +174,6 @@
 
   margin-bottom: 3.75rem;
   font-size: 1.25rem;
-  color: #8b98a5;
 }
 
 .user-counters {
@@ -178,10 +188,6 @@
 
 .user-counters .counters {
   text-align: center;
-}
-
-.user-counters .counters p {
-  color: #8b98a5 !important;
 }
 
 .user-counters .counters label {
@@ -202,14 +208,7 @@
   align-items: center;
 }
 
-a:link,
-a:visited {
-  color: var(--secundary-color) !important;
-  text-decoration: none;
-}
-
-svg {
+.Content svg {
   width: 2.5rem;
   height: 30px;
-  fill: #ffff;
 }
