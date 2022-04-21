@@ -13,6 +13,8 @@ export const lightTheme = {
 
   searchIcon: "#000",
   contentSvgFill: "#000",
+  borderPhoto: "#000",
+  borderColor: "#eff3f4",
 };
 
 export const darkTheme = {
@@ -28,6 +30,8 @@ export const darkTheme = {
 
   searchIcon: "#8b98a5",
   contentSvgFill: "#FFF",
+  borderPhoto: "#8b98a5",
+  borderColor: "#2f3336",
 };
 
 export const GlobalStyles = createGlobalStyle`
@@ -47,6 +51,7 @@ export const GlobalStyles = createGlobalStyle`
 
     .Search {
         background-color: ${(props) => props.theme.primaryColor};
+        border: 1px solid ${(props) => props.theme.borderColor};
     }
 
     span.anticon.anticon-search.search-icon {
@@ -61,10 +66,15 @@ export const GlobalStyles = createGlobalStyle`
     .Content {
         background-color: ${(props) => props.theme.primaryColor};
         color:  ${(props) => props.theme.fontColor};
+        border: 1px solid ${(props) => props.theme.borderColor};
     }
 
     .Content svg {
         fill: ${(props) => props.theme.contentSvgFill};
+    }
+
+    .user-photo .photo{
+        border: 1px solid ${(props) => props.theme.contentSvgFill};
     }
 
     .user-bio {
